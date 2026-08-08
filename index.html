@@ -17,7 +17,7 @@
       <h4>Navigation Menu:</h4>
       <nav>
         <p>
-          <a href="">1.Internal Navigation(jump to about)</a> |
+          <a href="#table">1.Internal Navigation(jump to about)</a> |
           <a href="products.html" target="_blank"
             >2.Next page in same website</a
           >
@@ -95,6 +95,39 @@ function calculateGrade(score) {
             <dd>A software application used to access and view websites</dd>
         </dl>
         <hr/>
+        <h2 id="table">Table with Colspan & Rowspan</h2>
+        <table border="1">
+            <caption>Student Academic Results Summary</caption>
+            <thead>
+                <tr>
+                    <th scope="col" rowspan="2">Student Name</th>
+                    <th colspan="2">Scores</th>
+                    <th scope="col" rowspan="2">Final Grade</th>
+                </tr>
+                <tr>
+                    <th>Assignments</th>
+                    <th>Exams</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">Jane Doe</td>
+                    <td>95</td>
+                    <td>92</td>
+                    <td>A</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td scope="row">John Smith</td>
+                    <td>88</td>
+                    <td>84</td>
+                    <td>B</td>
+                </tr>
+            </tfoot>
+        </table>
+        <hr/>
+        
     </main>
   </body>
 </html
