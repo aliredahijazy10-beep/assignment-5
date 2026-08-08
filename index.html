@@ -127,7 +127,45 @@ function calculateGrade(score) {
             </tfoot>
         </table>
         <hr/>
-        
+        <h2>Interactive Form Controls</h2>
+        <form action="http://my_server.com" method="post">
+            <label for="name">Full Name (Text Input): </label><br/>
+            <input type="text" id="name" placeholder="Ali Al Reda Hijazi" name="users_name" /> <br/><br/>
+            <label for="pass">Password (Password Input): </label><br/>
+            <input type="password" id="pass" name="users_password" /><br/><br/>
+            <label for="email">Email Address (Email Input): </label><br/>
+            <input type="email" id="email" placeholder="student@example.com" name="users_email" /> <br/><br/>
+            <label for="age">Age (Number Input): </label><br/>
+            <input type="number" id="age" value="20" min="10" max="70" step="1" name="users_age" />
+            <p>Gender (Radio Input): </p>
+            <input type="radio" id="gender" name="users_gender" value="male"/>
+            <label for="gender">Male</label><br>
+            <input type="radio" id="gender_2" name="users_gender" value="female"/>
+            <label for="gender_2">Female</label>
+            <p>Topics (Checkbox Input): </p>
+            <input type="checkbox" id="topics" name="users_topics" value="web_development"/>
+            <label for="topics">Web Development</label><br>
+            <input type="checkbox" id="topics_2" name="users_topics" value="data_bases"/>
+            <label for="topics_2">Databases</label><br><br>
+            <label for="preferred">Preferred Browser (Input List): </label><br>
+            <input type="text" id="preferred" name="users_preferres_list" list="preferred_list" />
+            <datalist id="preferred_list">
+                <option>brave</option>
+                <option>chrome</option>
+                <option>firefox</option>
+            </datalist><br><br>
+            <label for="level">Academic Level (Select): </label><br>
+            <select id="level" name="users_academic_level" >
+                <option>Undergraduate</option>
+                <option>Postgraduate</option>
+                <option>Doctorate</option>
+            </select><br><br>
+            <label for="message">Feedback (Textarea): </label><br>
+            <textarea id="message" name="message" placeholder="Enter feedback here..." rows="4" cols="50"></textarea><br><br>
+            <input type="submit" value="Submit Form" />
+            <input type="reset" value="Reset Form" />
+            <br><hr>
+        </form>
     </main>
   </body>
 </html
